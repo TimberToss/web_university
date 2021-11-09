@@ -151,8 +151,9 @@ class GildedRose {
     }
 
     updateQuality() {
-        return this.items
-        .map(element => this.mapToInfoItem(element))
-        .forEach(infoItem => this.updateInfoItem(infoItem));
+        this.items
+            .map(element => this.mapToInfoItem(element))
+            .forEach(infoItem => this.updateInfoItem(infoItem));
+        return this.items;
     }
 }
